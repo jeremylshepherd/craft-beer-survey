@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FreeCodeCamp Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<form action="" id="survey-form" class="df ais jcb">
+    
+    <!--Heading section -->
+    <div style="text-align:center">
+      <h1 id="title">Craft Beer Survey</h1>
+      <p id="description">
+        A brief survey of beer preferences and corresponding familiarity with craft beer.
+      </p>
+    </div>
+  
+    <!--Personal Info section -->
+    <div>
+      <div class="df jcb">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="df jcb">
+          <label for="email" id="email-label">
+            Email
+          </label>
+          <input id="email" type="email" placeholder="Enter your email" name="email" required>
+        </div>
+        <div class="df jcb">
+          <label for="id" id="number-label">
+            Age
+          </label>
+          <input id="number" name="id" type="number" placeholder="Must be 21" min="21" max="130" required>
+        </div>
+        <div class="df jcb">
+          <label for="dropdown">Craft Beer Experience:</label>
+          <select id="dropdown">
+            <option value="virigin">Virigin</option>
+            <option value="hobbyist">Hobbyist</option>
+            <option value="enthusiast">Enthusiast</option>
+            <option value="jedi">Jedi</option>
+          </select>
+        </div>
+      </div>
+      <hr/>
+      
+      <!--How Likely section -->
+      <div class="df fdc aifs jcb">        
+        <span>How likely are you to experiment with different beer styles? <em>(On a scale of 1 to 5 - 1 being impossible, 5 being complete metaphysical certitude)</em></span>
+        <div style="align-self: stretch; display:flex; justify-content: space-around">
+            <input type="radio" value="1" name="experiment">
+            <label for="1">1</label>
+            <input type="radio" value="2" name="experiment">
+            <label for="2">2</label>
+            <input type="radio" value="3" name="experiment">
+            <label for="3">3</label>
+            <input type="radio" value="4" name="experiment">
+            <label for="4">4</label>
+            <input type="radio" value="5" name="experiment">
+            <label for="5">5</label>
+        </div>
+      </div>  
+      
+      <!--Favorite Styles section -->
+      <div id="styles">
+        <div>
+          <label>
+            Favorite Styles <em>(Check all that apply)</em>:
+          </label>
+        </div>
+        <div id="checkboxes" class="dg">
+            <div>
+              <input type="checkbox" value="stout">
+              <label>Stout</label>
+            </div>
+            <div>
+              <input type="checkbox" value="porter">
+              <label>Porter</label>
+            </div>
+            <div>
+              <input type="checkbox" value="lager">
+              <label>Lager</label>
+            </div>
+            <div>
+              <input type="checkbox" value="gose">
+              <label>Gose</label>
+            </div>
+            <div>
+              <input type="checkbox" value="indian pale ale">
+              <label>India Pale Ale</label>
+            </div>
+            <div>
+              <input type="checkbox" value="imperial stout">
+              <label>Imperial Stout</label>
+            </div>
+            <div>
+              <input type="checkbox" value="doppelbock">
+              <label>Doppelbock</label>
+            </div>
+            <div>
+              <input type="checkbox" value="amber ale">
+              <label>Amber Ale</label>
+            </div>
+            <div>
+              <input type="checkbox" value="hefeweizen">
+              <label>Hefeweizen</label>
+            </div>
+            <div>
+              <input type="checkbox" value="other">
+              <label>Other</label>
+            </div>
+          </div>
+        </div>
+    
+    <hr>
+  
+    <!--Comments section -->
+    <div>
+      <h4>Comments</h4>
+      <textarea name="comments" id="comments" rows="5" placeholder="Additional Comments..."></textarea>
+    </div>  
+  
+    <!--Submit Button section -->
+    <button id="submit" type="submit">SUBMIT</buuton>
+  
+</form>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
